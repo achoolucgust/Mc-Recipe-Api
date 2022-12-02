@@ -1,9 +1,13 @@
-# README
+# Minecraft Recipe API
 
-This is the [Flask](http://flask.pocoo.org/) [quick start](http://flask.pocoo.org/docs/1.0/quickstart/#a-minimal-application) example for [Render](https://render.com).
+MC Recipe API. This comes with en_us language API thingy
 
-The app in this repo is deployed at [https://flask.onrender.com](https://flask.onrender.com).
+Here's how you get the crafting recipe for an **Oak Door**.
+https://mcrecapi.onrender.com/recipe/oak_door
 
-## Deployment
+That should return ```{"group":"wooden_door","key":{"#":{"item":"minecraft:oak_planks"}},"pattern":["##","##","##"],"result":{"count":3,"item":"minecraft:oak_door"},"type":"minecraft:crafting_shaped"}```
 
-Follow the guide at https://render.com/docs/deploy-flask.
+And now you want to get the en_us name of oak_planks:
+mcrecapi.onrender.com/lang/oak_planks
+
+*(Theres also a splash screen generator mcrecapi.onrender.com/splash )*
